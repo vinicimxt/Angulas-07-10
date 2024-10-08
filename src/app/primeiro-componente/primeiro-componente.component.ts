@@ -18,8 +18,10 @@ export class PrimeiroComponenteComponent {
   nome: new FormControl('', [Validators.required,Validators.minLength(3)]),
   idade : new FormControl(null, [Validators.required,Validators.min(0), Validators.max(120)]),
   cidade : new FormControl('',[Validators.required,Validators.minLength(3)]),
+  alimento: new FormControl('', [Validators.required,Validators.minLength(3)]),
+  treino: new FormControl('', [Validators.required,Validators.minLength(3)]),
   sexo: new FormControl ('',[Validators.required]),
-  estado_civil: new FormControl ('',[Validators.required])
+  estado_civil: new FormControl ('',[Validators.required]),
  });
 
  //Visibilidade dos botões
@@ -59,9 +61,10 @@ export class PrimeiroComponenteComponent {
     nome: this.vetor[indice].nome,
     idade: this.vetor[indice].idade,
     cidade: this.vetor[indice].cidade,
+    alimento: this.vetor[indice].alimento,
+    treino: this.vetor[indice].treino,
     sexo: this.vetor[indice].sexo,
-    estado_civil: this.vetor[indice].estado_civil
-
+    estado_civil: this.vetor[indice].estado_civil,
   });
 
 //Visibilidade dos botões
